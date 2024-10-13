@@ -29,7 +29,7 @@ fn dummy_query() -> Statement {
 			cluster_by: vec![],
 			distinct: None,
 			distribute_by: vec![],
-			group_by: GroupByExpr::Expressions(vec![]),
+			group_by: GroupByExpr::Expressions(vec![], vec![]),
 			from: vec![],
 			having: None,
 			lateral_views: vec![],
@@ -37,15 +37,18 @@ fn dummy_query() -> Statement {
 			connect_by: None,
 			value_table_mode: None,
 			window_before_qualify: false,
+			prewhere: None,
 		}))),
 		locks: vec![],
 		limit: None,
 		with: None,
 		fetch: None,
 		offset: None,
-		order_by: vec![],
+		order_by: None,
 		for_clause: None,
 		limit_by: vec![],
+		settings: None,
+		format_clause: None,
 	}))
 }
 

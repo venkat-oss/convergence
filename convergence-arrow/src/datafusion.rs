@@ -24,6 +24,7 @@ fn dummy_query() -> Statement {
 				false,
 			)))],
 			top: None,
+			top_before_distinct: false,
 			sort_by: vec![],
 			selection: None,
 			cluster_by: vec![],

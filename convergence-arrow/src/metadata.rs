@@ -154,6 +154,7 @@ impl MetadataBuilder {
 }
 
 /// Wrapper catalog supporting generation of pg metadata (e.g. pg_catalog schema).
+#[derive(Debug)]
 pub struct Catalog {
 	wrapped: Arc<dyn CatalogProvider>,
 }
